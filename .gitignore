@@ -1,0 +1,26 @@
+# OS or Editor folders
+*.sublime-grunt.cache
+*.sublime-project
+*.sublime-workspace
+._*
+.cache
+.DS_Store
+.project
+.settings
+.tmproj
+Thumbs.db
+Session.vim
+tags
+
+# Folders to ignore
+.CVS
+.git
+.hg
+.idea
+.svn
+bower_components
+components
+
+# Node.JS
+node_modules
+npm-debug.log

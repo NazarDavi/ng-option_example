@@ -1,0 +1,32 @@
+{
+  "name": "ng-option_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bower": "^1.6.5",
+    "browser-sync": "^2.9.12",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitVn/ng-option_example.git"
+  },
+  "keywords": [
+    "csssr",
+    "CSSSR",
+    "csssr",
+    "blog",
+    "blog"
+  ],
+  "author": "gitVn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitVn/ng-option_example/issues"
+  },
+  "homepage": "https://github.com/gitVn/ng-option_example#readme"
+}
