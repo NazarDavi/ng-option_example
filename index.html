@@ -12,10 +12,10 @@
 			<div class="col-md-3">
 				<h2 align="center">Выберите вольер и клетку</h2>
 				<div class="form-group">
-					<select ng-model="request.volary" ng-options="volary as volary.text for volary in volaries" class="form-control"></select>
+					<select ng-model="request.volary" ng-change="setDefaultCage()" ng-options="volary.text for volary in volaries track by volary.volary_id" class="form-control"></select>
 				</div>
-				<div ng-if="request.volary" class="form-group"> <!-- Отображать, если вольер уже выбран -->
-					<select ng-model="request.cage" ng-repeat="volary in volaries" ng-show="request.volary == volary" ng-options="cage as cage.text for cage in volary.cages" class="form-control"></select> <!--Здесь мы проходим по всем вольерам и отображаем клетки из того вольера, который был выбран ранее-->
+				<div class="form-group">
+					<select ng-model="request.cage" ng-options="cage.text for cage in request.volary.cages track by cage.cage_id" class="form-control">
 				</div>
 			</div>
 	</body>

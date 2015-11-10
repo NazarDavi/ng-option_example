@@ -43,4 +43,15 @@ app.controller('exampleController', function($scope) {
 				]
 		},
 	];
+
+	$scope.request.volary = $scope.volaries[0];
+	$scope.request.cage = $scope.volaries[0].cages[0];
+
+	$scope.setDefaultCage = function() {
+		angular.forEach($scope.request.volary.cages, function(cage) {	// Сейчас в request находится вольер, клетки которого нужно отобразить
+			if (cage.is_default) {
+				$scope.request.cage = cage;								// Перебираем все клетки этого вольера и записываем в модель клетку по умолчанию, это избавит от пустого option во втором select
+			}
+		});
+	};
 });
